@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spending Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>SPENDING TRACKER</h1>
+  <form id="spending-form">
+    Date: <input type="date"><br>
+    Cost: <input type="currency"><br>
+    Product: <input type="text"><br>
+    Type: <input type="text"><br>
+    PayPal: <input type="checkbox"><br>
+    <div>
+      <p>Payment Medium:</p>
+      <div>
+        <input type="radio" name="payment-medium" id="cash" value="Cash" checked>
+        <label for="cash">Cash</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="amazon-store" value="Amazon Store">
+        <label for="amazon-store">Amazon Store</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="tjx-rewards" value="TJX Rewards">
+        <label for="tjx-rewards">TJX Rewards</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="chase-amazon" value="Chase Amazon">
+        <label for="chase-amazon">Chase Amazon</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="chase-slate" value="Chase Slate">
+        <label for="chase-slate">Chase Slate</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="capitalone-credit" value="Capital One Credit">
+        <label for="capitalone-credit">Capital One Credit</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="bestbuy-store" value="Best Buy Store">
+        <label for="bestbuy-store">Best Buy Store</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="capitalone-debit" value="Capital One Debit">
+        <label for="capitalone-debit">Capital One Debit</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="chime-debit" value="Chime Debit">
+        <label for="chime-debit">Chime Debit</label>
+      </div>
+      <div>
+        <input type="radio" name="payment-medium" id="kisses" value="Kisses">
+        <label for="kisses">Kisses</label>
+      </div>
+    </div>    
+    <button>ADD</button>
+  </form>
+  <section id="spending-list">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Cost</th>
+          <th>Product</th>
+          <th>Type</th>
+          <th>Payment</th>
+          <th>Agent</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        
+      </tbody>
+    </table>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
