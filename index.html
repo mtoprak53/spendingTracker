@@ -9,13 +9,55 @@
 <body>
   <h1>SPENDING TRACKER</h1>
   <form id="spending-form">
-    Date: <input type="date"><br>
-    Cost: <input type="currency"><br>
-    Product: <input type="text"><br>
-    Type: <input type="text"><br>
-    PayPal: <input type="checkbox"><br>
+    Date: <input type="date" id="date"><br>
+    Cost: <input type="number" id="cost"><br>
+    Product: <input type="text" id="product"><br><br>
+    <!-- Type: <input type="text"><br><br> -->
     <div>
-      <p>Payment Medium:</p>
+      Expense Type:
+      <div>
+        <input type="radio" name="expense-type" id="rent" value="Rent" checked>
+        <label for="rent">Rent</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="utility" value="Utility">
+        <label for="utility">Utility</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="grocery" value="Grocery">
+        <label for="grocery">Grocery</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="dine-out" value="Dine-out">
+        <label for="dine-out">Dine-out</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="services" value="Services">
+        <label for="services">Services</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="transportation" value="Transportation">
+        <label for="transportation">Transportation</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="wares" value="Wares">
+        <label for="wares">Wares</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="subscriptions" value="Subscriptions">
+        <label for="subscriptions">Subscriptions</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="interest-fees" value="Interest & Fees">
+        <label for="interest-fees">Interest & Fees</label>
+      </div>
+      <div>
+        <input type="radio" name="expense-type" id="donation" value="Donation">
+        <label for="donation">Donation</label>
+      </div>
+    </div><br>
+    <div>
+      Payment Medium:
       <div>
         <input type="radio" name="payment-medium" id="cash" value="Cash" checked>
         <label for="cash">Cash</label>
@@ -56,8 +98,9 @@
         <input type="radio" name="payment-medium" id="kisses" value="Kisses">
         <label for="kisses">Kisses</label>
       </div>
-    </div>    
-    <button>ADD</button>
+    </div><br>
+    PayPal: <input type="checkbox" id="paypal"><br><br>
+    <button>ADD</button><br><hr>
   </form>
   <section id="spending-list">
     <table>
