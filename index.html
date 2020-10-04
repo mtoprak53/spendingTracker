@@ -10,13 +10,14 @@
   <h1>SPENDING TRACKER</h1>
   <form id="spending-form">
     Date: <input type="date" id="date"><br>
-    Cost: <input type="number" id="cost"><br>
-    Product: <input type="text" id="product"><br><br>
+    Cost: $<input type="number" id="cost" step='0.01' placeholder='0.00'><br>
+    Product: <input type="text" id="product" placeholder="Yimah"><br><br>
     <!-- Type: <input type="text"><br><br> -->
+    <div class="checkbox">
     <div>
       Expense Type:
       <div>
-        <input type="radio" name="expense-type" id="rent" value="Rent" checked>
+        <input type="radio" name="expense-type" id="rent" value="Rent" >
         <label for="rent">Rent</label>
       </div>
       <div>
@@ -24,7 +25,7 @@
         <label for="utility">Utility</label>
       </div>
       <div>
-        <input type="radio" name="expense-type" id="grocery" value="Grocery">
+        <input type="radio" name="expense-type" id="grocery" value="Grocery" checked>
         <label for="grocery">Grocery</label>
       </div>
       <div>
@@ -59,11 +60,11 @@
     <div>
       Payment Medium:
       <div>
-        <input type="radio" name="payment-medium" id="cash" value="Cash" checked>
+        <input type="radio" name="payment-medium" id="cash" value="Cash">
         <label for="cash">Cash</label>
       </div>
       <div>
-        <input type="radio" name="payment-medium" id="amazon-store" value="Amazon Store">
+        <input type="radio" name="payment-medium" id="amazon-store" value="Amazon Store" checked>
         <label for="amazon-store">Amazon Store</label>
       </div>
       <div>
@@ -98,7 +99,8 @@
         <input type="radio" name="payment-medium" id="kisses" value="Kisses">
         <label for="kisses">Kisses</label>
       </div>
-    </div><br>
+    </div>
+    </div>
     PayPal: <input type="checkbox" id="paypal"><br><br>
     <button>ADD</button><br><hr>
   </form>
@@ -118,6 +120,10 @@
       <tbody id="table-body">
         
       </tbody>
+      <tfoot>
+        <th>Total:</th>
+        <td id="total">$ 0.00</td>
+      </tfoot>
     </table>
   </section>
   <script src="app.js"></script>

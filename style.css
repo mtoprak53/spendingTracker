@@ -5,3 +5,15 @@ h1 {
 th {
   background-color: lightgray;
 }
+
+td:last-child {
+  background-color: lightcoral;
+}
+
+#total {
+  background-color: lightgreen;
+}
+
+.checkbox {
+  display: inline-flex;
+}
