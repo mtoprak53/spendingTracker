@@ -17,3 +17,11 @@ td:last-child {
 .checkbox {
   display: inline-flex;
 }
+
+form, form + div {
+  font-weight: bold;
+}
+
+label {
+  font-weight: normal;
+}

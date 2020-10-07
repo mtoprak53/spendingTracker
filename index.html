@@ -9,9 +9,9 @@
 <body>
   <h1>SPENDING TRACKER</h1>
   <form id="spending-form">
-    Date: <input type="date" id="date"><br>
-    Cost: $<input type="number" id="cost" step='0.01' placeholder='0.00'><br>
-    Product: <input type="text" id="product" placeholder="Yimah"><br><br>
+    Date: <input type="date" id="date" required><br>
+    Cost: $<input type="number" id="cost" step='0.01' placeholder='0.00' required><br>
+    Spent for: <input type="text" id="product" placeholder="Trader Joe's"><br><br>
     <!-- Type: <input type="text"><br><br> -->
     <div class="checkbox">
     <div>
@@ -95,10 +95,10 @@
         <input type="radio" name="payment-medium" id="chime-debit" value="Chime Debit">
         <label for="chime-debit">Chime Debit</label>
       </div>
-      <div>
+      <!-- <div>
         <input type="radio" name="payment-medium" id="kisses" value="Kisses">
         <label for="kisses">Kisses</label>
-      </div>
+      </div> -->
     </div>
     </div>
     PayPal: <input type="checkbox" id="paypal"><br><br>
